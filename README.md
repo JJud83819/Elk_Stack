@@ -33,22 +33,22 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name     | Function                                           | IP Addresses            | OS                   |
+|----------|----------------------------------------------------|-------------------------|----------------------|
+| Jump_Box | Gateway                                            | 20.40.96.241  10.30.0.4 | Linux (ubuntu 18.04) |
+| Web_1    | web Server Running DVWA                            | 20.89.49.23  10.3.0.5   | Linux                |
+| Web_2    | Web Server Running DVWA                            | 20.89.49.23  10.3.0.6   | Linux                |
+| Elk_VM   | Elk Container with Filebeat & Metricbeat to Kibana | 10.6.0.4                | Linux                |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump_Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- My Public IP address via SSH Port 22
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the Jump_Box inside of the specific Resource Group.
+- Which machine did you allow to access your ELK VM? Jump_Box What was its IP address? 20.40.96.241
 
 A summary of the access policies in place can be found in the table below.
 
