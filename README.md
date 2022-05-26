@@ -23,10 +23,10 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be highly applicable, in addition to restricting vulnerbility to the network.
 -What aspect of security do load balancers protect? ( defends an organization against DDoS attacks. ) What is the advantage of a jump box? ( any tools in place for the SAN system are maintained on that single system.)
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system configuration.
 - What does Filebeat watch for? ( monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. )
 -( What does Metricbeat record? Takes the metrics and statistics that it collects and ships them to the output that you specify. )
 
@@ -93,9 +93,9 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the myplaybook file to File.
+- Update the myplaybook file to include...
+- Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - Which file is the playbook? filebeat filebeat-playbook.yml Where do you copy it? In the File directory
