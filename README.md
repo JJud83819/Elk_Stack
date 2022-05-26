@@ -77,13 +77,17 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
--
+- Web 1 
+- Web 2
+- JumpBox
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Filebeat
+- Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeat: monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+- Metricbeat: to periodically collect metrics from the operating system and from services running on the server.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -94,8 +98,8 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Which file is the playbook? filebeat filebeat-playbook.yml Where do you copy it? In the File directory
+- Which file do you update to make Ansible run the playbook on a specific machine? On the File directory we created. How do I specify which machine to install the ELK server on versus which to install Filebeat on? Filebeat is and can be installed on the Elk server or the JumpBox.
+- Which URL do you navigate to in order to check that the ELK server is running? $smarts/bin/sm_service show
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
