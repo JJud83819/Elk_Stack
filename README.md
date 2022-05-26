@@ -55,8 +55,8 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 | 10.0.0.1 10.0.0.2    |
-| Web 1    | Yes                 |                      |
-| Web 2    | Yes                 |                      |
+| Web 1    | Yes                 | 10.3.0.4 10.3.0.7    |
+| Web 2    | Yes                 | 10.3.0.5 10.3.0.8    |
 
 ### Elk Configuration
 
@@ -64,9 +64,9 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - What is the main advantage of automating configuration with Ansible? ( It runs once you start Ansible. )
 
 The playbook implements the following tasks:
-- 
-- ...
-- ...
+- Downloading Docker & Ansible
+- Deploying both
+- running Kibana through Elk VM
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -77,7 +77,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+-
 
 We have installed the following Beats on these machines:
 - _TODO: Specify which Beats you successfully installed_
